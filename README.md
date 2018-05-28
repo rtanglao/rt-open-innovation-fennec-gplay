@@ -84,7 +84,7 @@ zip -e apr2018-stderr-archive.zip 27may2018-apr2018-stderr.txt
 ```bash
 iconv -f UTF-16 -t UTF-8 27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201805.csv > utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201805.csv
 wc -l utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201805.csv 
-   16067 utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201805.csv
+   14109 utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201805.csv
 ./read-reviews-replies.rb utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201805.csv 2>27may2018-may2018-stderr.txt
 # 16066 rows inserted
 zip -e may2018-ratings-reviews-archive.zip utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201805.csv
