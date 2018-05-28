@@ -8,8 +8,9 @@ cd ~/Dropbox/GIT/rt-open-innovation-fennec-gplay
 pushd ~/Documents/MONGO_DATABASES
 mongod --config /usr/local/etc/mongod.conf --dbpath . &
 popd
-wc -l 27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201711.csv 
-   28043 27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201711.csv
 iconv -f UTF-16 -t UTF-8 27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201711.csv > utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201711.csv
+wc -l utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201711.csv 
+   27866 utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201711.csv
 ./read-reviews-replies.rb utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201711.csv 2>27may2018-nov2017-stderr.txt
+# 27865 rows inserted
 ```
