@@ -26,7 +26,7 @@ iconv -f UTF-16 -t UTF-8 27may2018-downloaded-reviews_reviews_org.mozilla.firefo
 wc -l utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201712.csv 
    22043 utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201712.csv
 ./read-reviews-replies.rb utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201712.csv 2>27may2018-dec2017-stderr.txt
-#  rows inserted
+# 22042 rows inserted
 zip -e dec2017-ratings-reviews-archive.zip utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201712.csv
 zip -e dec2017-stderr-archive.zip 27may2018-dec2017-stderr.txt
 ```
