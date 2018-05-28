@@ -121,4 +121,5 @@ db.reviews.find(
 ).limit(100000);
 ```
 
-* 2\. this yields 14347 documents i.e. rows for the CSV file
+* 2\. this yields 14347 documents i.e. rows for the CSV file, I used the 30 day free trial of Studio 3T MongoDB utility to generate this file and it is called:
+** ```27may2018-14nov2017-27may2018-unanswered-reviews.csv```
