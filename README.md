@@ -8,6 +8,7 @@ cd ~/Dropbox/GIT/rt-open-innovation-fennec-gplay
 pushd ~/Documents/MONGO_DATABASES
 mongod --config /usr/local/etc/mongod.conf --dbpath . &
 popd
+# for some bizarre reason google uses UTF-16 so convert to UTF-8
 iconv -f UTF-16 -t UTF-8 27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201711.csv > utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201711.csv
 wc -l utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201711.csv 
    27866 utf8-27may2018-downloaded-reviews_reviews_org.mozilla.firefox_201711.csv
